@@ -175,3 +175,15 @@ setSeconds()	Set the seconds (0-59)
 setTime()	Set the time (milliseconds since January 1, 1970)
 
 ````
+
+
+## Boolean
+```` Javascript
+Boolean(100)             // true → karena 100 adalah angka bukan nol
+Boolean(3.14)            // true → angka pecahan positif, tetap true
+Boolean(-15)             // true → angka negatif juga dianggap true
+Boolean("Hello")         // true → string tidak kosong dianggap true
+Boolean("false")         // true → meskipun tulisannya "false", ini tetap string, bukan nilai boolean, jadi dianggap true
+Boolean(1 + 7 + 3.14)    // true → hasilnya 11.14, angka bukan nol, maka true
+
+````
